@@ -1,45 +1,35 @@
-# Driver Drowsiness Detection using Haar Cascade Algorithm in Deep Learning
+# Driver Drowsiness Detection System
 
-## Overview
-
-This project is a real-time driver drowsiness detection system implemented using the Haar Cascade algorithm. Drowsy driving is a significant safety concern that can lead to accidents on the road. This project aims to address this issue by utilizing computer vision techniques to detect signs of driver drowsiness and alert the driver in a timely manner.
-
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Run the Program](#run-the-program)
-  - [Configuration](#configuration)
-- [Contributions](#contributions)
-
-
-## Features
-
-- **Face Detection:** The system uses the Haar Cascade classifier to detect the face of the driver in real-time.
-  
-- **Eye Detection:** Once the face is detected, the algorithm identifies the eyes within the face region using Haar Cascade classifiers.
-
-- **Drowsiness Detection:** By monitoring the driver's eye closure and blink patterns, the system determines the level of drowsiness.
-
-- **Alert Mechanism:** When signs of drowsiness are detected, the system triggers an alert to notify the driver. This could be in the form of an audible alarm, visual alert, or a combination of both.
-
-- **Configurability:** Users can easily configure sensitivity thresholds and alert mechanisms to suit their preferences.
+## Project Description
+This project implements a real-time Driver Drowsiness Detection System using
+computer vision techniques. The system monitors the driver's eye movements
+using Haar Cascade classifiers and alerts the driver when drowsiness is detected.
 
 ## Technologies Used
+- Python
+- OpenCV
+- Haar Cascade Classifier
+- NumPy
+- Computer Vision
 
-- **OpenCV:** The computer vision library is used for face and eye detection.
+## Features
+- Real-time face and eye detection
+- Drowsiness detection based on eye closure duration
+- Audio/visual alert system
+- Live camera monitoring
 
-- **Haar Cascade Classifiers:** Pre-trained classifiers are employed for face and eye detection.
+## Implementation
+The project uses Haar Cascade classifiers for detecting facial features.
+Eye closure is tracked over consecutive frames to identify drowsiness.
+Threshold-based logic is used to trigger alerts.
 
-- **Python:** The entire system is implemented in Python for ease of understanding, modification, and extension.
+## Customization
+Implemented and customized by **Vani**:
+- Added real-time name overlay on detection window
+- Tuned eye-closure threshold for improved accuracy
 
-## Getting Started
-
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/SHAMSUNDAR20/Driver-drowsiness-Detection-using-Haar-Cascade-Algorithm-in-Deep-Learning.git
+## How to Run
+1. Install dependencies
+2. Run the main Python file
+3. Allow camera access
+4. Observe real-time detection
